@@ -1,155 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c4b0b8c-663f-4b1c-8aad-8433114dc86f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agents/actor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agents/actor_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agents/compute_features.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agents/compute_features_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agents/evaluator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agents/networks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agents/networks_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agents/trajectory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/data_locator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/4_pandas_world.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/8_pandas_world.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/finger_0.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/finger_1.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/hand.stl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/hand_0.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/hand_1.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/hand_2.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/hand_3.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/hand_4.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link0.stl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link0_0.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link0_1.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link0_10.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link0_11.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link0_2.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link0_3.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link0_4.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link0_5.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link0_7.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link0_8.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link0_9.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link1.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link1.stl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link2.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link2.stl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link3.stl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link3_0.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link3_1.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link3_2.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link3_3.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link4.stl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link4_0.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link4_1.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link4_2.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link4_3.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link5_0.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link5_1.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link5_2.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link5_collision_0.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link5_collision_1.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link5_collision_2.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6.stl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_0.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_1.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_10.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_11.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_12.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_13.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_14.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_15.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_16.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_2.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_3.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_4.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_5.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_6.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_7.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_8.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link6_9.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link7.stl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link7_0.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link7_1.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link7_2.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link7_3.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link7_4.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link7_5.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link7_6.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/assets/link7_7.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/hand.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/panda.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/panda_nohand.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/adjustable_tool_arm/adjustable_tool_arm.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/adjustable_tool_arm/adjustable_tool_arm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/adjustable_tool_arm/adjustable_tool_arm_c01.stl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/adjustable_tool_arm/material.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/adjustable_tool_base/adjustable_tool_base.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/adjustable_tool_base/adjustable_tool_base.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/adjustable_tool_base/adjustable_tool_base_c01.stl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/adjustable_tool_base/adjustable_tool_base_c02.stl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/adjustable_tool_base/material.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/adjustable_tool_tip/adjustable_tool_tip.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/adjustable_tool_tip/adjustable_tool_tip.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/adjustable_tool_tip/adjustable_tool_tip_c01.stl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/adjustable_tool_tip/adjustable_tool_tip_c02.stl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/adjustable_tool_tip/material.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/source/adjustable_tool_arm.dae" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/source/adjustable_tool_base.dae" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/source/adjustable_tool_tip.dae" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/franka_emika_panda/tool/tool.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/quad_table/quad_table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/quad_table/quad_table_0.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/quad_table/quad_table_0.obj.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/quad_table/quad_table_1.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/quad_table/quad_table_1.obj.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/quad_table/quad_table_2.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/quad_table/quad_table_2.obj.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/quad_table/quad_table_3.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/quad_table/quad_table_3.obj.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/table_cube/table_cube.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/table_cube/table_cube_collision.stl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/table_cube/table_cube_vis_0.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/table_cube/table_cube_vis_0.obj.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/table_cube/table_cube_vis_1.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/mujoco_world/assets/table_cube/table_cube_vis_1.obj.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/paper_test_tasksets/test_10targets.pbtxt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/paper_test_tasksets/test_20targets.pbtxt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/paper_test_tasksets/test_40targets.pbtxt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/start_states/4r_10t_30o.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/start_states/4r_40t_30o.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/start_states/8r_10t_30o.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/start_states/8r_40t_30o.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/base_env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/base_env_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/data.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/generate_start_states.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/geometry.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/geometry_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/ik_solver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/mujoco_simulator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/mujoco_simulator_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/planning_env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/planning_env_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/simulator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/target.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/target_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/environments/util_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/launch/hparams.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/launch/launch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/launch/launch_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train/stats.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train/stats_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train/train.py" afterDir="false" />
-    </list>
+    <list default="true" id="1c4b0b8c-663f-4b1c-8aad-8433114dc86f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -177,9 +32,15 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\paichichi\Documents\GitHub\roboballet" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -195,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761302524826</updated>
-      <workItem from="1761302525940" duration="313000" />
+      <workItem from="1761302525940" duration="898000" />
     </task>
     <servers />
   </component>
