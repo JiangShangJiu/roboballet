@@ -3,8 +3,6 @@
 This is the code release accompanying our paper "RoboBallet: Planning for
 Multi-Robot Reaching with Graph Neural Networks and Reinforcement Learning".
 
-**Note:** The complete source code, including the pre-generated start states and evaluation task sets, is available at [Zenodo](https://zenodo.org/records/16546403/files/roboballet.tar.zst?download=1).
-
 ## Installation
 
 ```

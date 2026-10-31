@@ -554,9 +554,8 @@ class ActorNode:
     """Updates policy network variables and return the new variables."""
     network_variables = None
     while not lp.stop_event().is_set():
-      f = self._learner_client.futures.get_policy_variables()
       try:
-        new_variables, step = f.result(timeout=POLICY_FETCH_TIMEOUT_S)
+        new_variables, step = self._learner_client.get_policy_variables()
         network_variables = jax.device_put(
             new_variables, device=self._jax_device
         )
@@ -566,10 +565,10 @@ class ActorNode:
         self._network_step = step
         logging.info('Fetched policy net params (step %d)', step)
         break
-      except TimeoutError:
+      except Exception as e:  # pylint: disable=broad-except
         logging.warning(
-            'Timeout fetching policy net params. '
-            'Has the learner been shut down?'
+            'Failed fetching policy net params: %s. '
+            'Has the learner been shut down?', e
         )
         time.sleep(10)
     return network_variables

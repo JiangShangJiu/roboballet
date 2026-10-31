@@ -23,3 +23,26 @@ share/python-wheels/
 *.egg
 MANIFEST
 *.pb
+
+# Protobuf generated code
+environments/data_pb2.py
+
+# Local training environment
+venv/
+.env
+
+# Training artifacts and logs
+run/
+run_*/
+smoke_*/
+train.log
+*.log
+model_checkpoints/
+tensorboard_log/
+
+# Local edit backups
+*.bak
+*.orig
+
+# Large start-state datasets
+start_states/

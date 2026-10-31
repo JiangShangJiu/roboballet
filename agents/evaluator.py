@@ -121,9 +121,8 @@ class EvaluatorNode:
   def _update_network_variables(self) -> None:
     """Retrieve new network variables."""
     while not lp.stop_event().is_set():
-      f = self._learner_client.futures.get_policy_variables()
       try:
-        new_variables, step = f.result(timeout=60.0)
+        new_variables, step = self._learner_client.get_policy_variables()
         self._network_variables = jax.device_put(
             new_variables, device=self._jax_device
         )
@@ -133,10 +132,10 @@ class EvaluatorNode:
         self._network_step = step
         logging.info('Fetched policy net params (step %d)', step)
         break
-      except TimeoutError:
+      except Exception as e:  # pylint: disable=broad-except
         logging.warning(
-            'Timeout fetching policy net params. '
-            'Has the learner been shut down?'
+            'Failed fetching policy net params: %s. '
+            'Has the learner been shut down?', e
         )
         time.sleep(10)
 
